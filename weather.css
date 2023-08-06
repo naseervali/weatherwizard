@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f4c2c2;
+}
+.container h1{
+    color: orange;
+    margin-top: 20px;
+    font-style: italic;
+}
+input{
+    margin-top:200px;
+    margin-left:200px;
+    width:500px;
+    border-radius: 20px;
+    padding:10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius:10px;
+    background-color:turquoise;
+
+}
+@media(max-width:772px){
+    .btn{
+      margin-top:10px;
+      margin-left:200px;
+    }
+}
+.btn:hover{
+    background-color: turquoise;
+    color: white;
+}
+.wraper{
+    margin-top:50px;
+    margin-left:300px;
+}
+.wraper {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+#city-name{
+    background-color: orange;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.details{
+    display: grid;
+    grid-template-columns:200px 300px;
+    column-gap: 10px;
+}
+@media(max-width:994px){
+    input{
+        margin-left: 10px;
+    }
+    .wraper{
+        margin-left: 10px;
+    }
+}
+.fadeIn {
+    opacity: 0;
+    animation: fadeInAnimation 1s forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    to {
+      opacity: 1;
+    }
+  }
